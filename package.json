@@ -27,11 +27,11 @@
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node init && ng serve",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build": "tsc --p tsconfig-build.json --removeComments",
+    "build": "node init && tsc --p tsconfig-build.json --removeComments",
     "prepublish": "",
     "postpublish": "ng build --prod --base-href https://sabrio.github.io/ng2-validation-manager/ && ngh"
   },
